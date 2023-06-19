@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      HELP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ <div class="components">
+  <img src  ="assets/q.png" width="100" height="100">
+</div>
+<ion-item>
+   <ion-textarea
+    [autoGrow]="true"
+    value="    In this comprehensive help guide, we'll walk you through the various features and functionalities of our Bus Tracking Mobile App, ensuring that you have all the tools necessary to navigate the city with ease. From finding the nearest bus stops to tracking your bus in real-time, we've got you covered."
+  >
+  </ion-textarea>
+</ion-item>
+
+<ion-content class="ion-padding">
+<div class="New_User_Guide">
+  <h1><b>New User Guide</b></h1>
+</div>
+
+<hr>
+
+<div class="Create_an_account">
+  <ion-text><h1>Create an account</h1></ion-text>
+</div>
+    <ion-text color="primary"><h2><b>Choose a language</b></h2></ion-text>
+    <ul>
+      <li>First select your desired language</li>
+    </ul>
+    <ion-text color="primary"><h2><b>To create new user account</b></h2></ion-text>
+        <ul>
+          <li><p>Enter your First name</p></li>
+          <li><p>Enter your Last name</p></li>
+          <li><p>Enter your Email</p></li>
+          <li><p>Enter your Password</p></li>
+          <hr>
+          <li><p>If all the above are filled, click on the login button</p></li>
+          <hr>
+          <li><p>Otherwise, you can log in from your Google account by clicking the Google button below. Alternatively, you can also log in from your Facebook account by clicking the Facebook button.</p></li>
+        </ul>
+        <ion-text color="primary"><h2>Your Mobile Number</h2></ion-text>
+        <ul>
+          <li>First you enter your country. Enter Sri Lanka as the country as this app is a Sri Lankan app.</li>
+          <li>Then enter your nine-digit phone number excluding the zero.</li>
+          <li>You will then receive an OTP code via email or SMS to your phone number.</li>
+          <li>Enter that code exactly at the OTP location.</li>
+        </ul>
+        <ion-text color="dark"><h3><b>If all the above are filled correctly then you can proceed.</b></h3></ion-text>
+        <ion-text color="primary"><h2>Main Page</h2></ion-text>
+        <ul>
+          <li>All the services you need are shown in this station</li>
+          <li>There are 04 main sections here.(Rides,Time Table,Tikets Prices,Online Tikets)</li>
+        </ul>
+  <ion-text color="primary"><h3>Rides</h3></ion-text>
+  <ul>
+    <li>In this section, you can view the current CTB buses on your route.</li>
+    <li>For that, search by mentioning your location and your destination in the search bar mentioned here.</li>
+    <li>Then Google Maps will show you the buses on your route and how far it is from you</li>
+  </ul>
+         <ion-text color="primary"><h2>View Bus Time Table</h2></ion-text>
+         <ul>
+          <li><p><b>This will allow you to view the CTB buses schedule for a day on your route</b></p></li>
+          <li>For that, you have to enter your itinerary in the search bar included in this section and search.</li>
+         </ul>
+  <ion-text color="primary"><h2>Ticket Prices</h2></ion-text>
+          <ul>
+            <li>Through this section, you can check the bus ticket cost for an adult and a child from your station to the destination.</li>
+            <li>For that, enter your location and destination in the search bar in this section and search.</li>
+          </ul>
+          <ion-text color="primary"><h2>Online Tikets</h2></ion-text>
+          <ul>
+            <li>From this section you have the facility to pay your bus ticket amount through your bank account</li>
+          </ul>
+          <ion-button  [routerLink]="['/help']" type="submit" color="danger" expand="block">Next</ion-button>
+</ion-content>

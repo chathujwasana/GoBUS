@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Setting</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding"> 
+  <ion-card>
+<ion-item>
+  <ion-input label="Fixed Input" label-placement="fixed" placeholder="Enter text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input label="Floating Input" label-placement="floating" placeholder="Enter text"></ion-input>
+</ion-item>
+  
+<ion-item>
+  <ion-select label="Language" placeholder="Make a Selection">
+      <ion-select-option value="">English</ion-select-option>
+    <ion-select-option value="">සිංහල</ion-select-option>
+    <ion-select-option value="">தமிழ்</ion-select-option>
+    
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-toggle> Night Mode on </ion-toggle>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox> Keep me loggedIn after exit from app </ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-range label-placement="start">
+    <div slot="label">Range</div>
+  </ion-range>
+</ion-item>
+</ion-card>
+</ion-content>

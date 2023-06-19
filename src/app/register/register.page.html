@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-content">
+  <div class="image">
+    <img src  ="assets/logotext.png">
+  </div>
+ <div class="form">
+  <form [formGroup]="submitDetails" (ngSubmit)="submit()">
+    <ion-item lines="full">
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input type="text" formControlName="fName" ></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">LastName</ion-label>
+      <ion-input type="text" formControlName="lName" ></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" formControlName="email" ></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password" ></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button  [routerLink]="['/otp-verification']" type="submit" color="danger" expand="block">Sign In</ion-button>
+     
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="centered-paragraph">
+      <ion-col>
+        <p> OR </p>
+   
+        <p>Signin with your Social Networks</p>
+      <button ion-button clear [routerLink]="['/forgot-password']">Forgot Password?</button>
+      </ion-col>
+     </ion-row>
+     
+     <ion-row class="image-row">
+      <ion-col class="image-col">
+        <ion-img src="assets/fb.png" class="image-class"></ion-img>
+      </ion-col>
+    
+      <ion-col class="image-col">
+        <ion-img src="assets/google.png" class="image-class"></ion-img>
+      </ion-col>
+    </ion-row>
+    
+
+      <ion-row class="help-button">
+        <ion-col class="ion-text-center">
+          <button ion-button  [routerLink]="['/helpregister']">Help</button>
+        </ion-col>
+      </ion-row>
+      
+
+  </form> 
+</div>
+</div>
+</ion-content>

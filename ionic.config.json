@@ -1,0 +1,7 @@
+{
+  "name": "busTrackingSystem",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

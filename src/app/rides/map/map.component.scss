@@ -1,0 +1,18 @@
+.map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+}
+
+.map.visible {
+    opacity: 1;
+}
+
+#searchBar{
+    display: block;
+    z-index: 999;
+    position: absolute;
+}

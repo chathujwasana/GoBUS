@@ -1,0 +1,35 @@
+.custom-table {
+  height: 100%;
+  width: 100%;
+  padding-left: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  border-collapse: collapse;
+}
+
+.custom-table th {
+  background-color: #e70c0c;
+  font-weight: bold;
+  width: auto;
+  padding: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 1px solid #050101;
+}
+
+.custom-table td {
+  width: auto;
+  padding: 5px;
+  border: 1px solid #050101;
+}
+
+.grid-table{
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

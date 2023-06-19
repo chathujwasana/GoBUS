@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>WELCOME</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="medium" [fullscreen]="true">
+ 
+<div class="content-text">
+  <div *ngIf="isLoading">
+    
+    <h1>WELCOME !!!!!</h1>
+    </div>
+  </div>
+    <br><br><br>
+  <div *ngIf="isLoading" class="img">
+    
+    <img src  ="assets/Grouplogo.png">
+      
+  </div>
+
+
+  <div *ngIf="isnotLoading"> 
+  <img src  ="assets/giphy.gif">
+</div>
+</ion-content>

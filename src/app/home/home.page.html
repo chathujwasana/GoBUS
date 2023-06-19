@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      WELCOME !!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="auth-form">
+  <div class="ion-content">
+  <ion-grid>
+    <ion-row>
+
+     <div class="imageContainer">
+
+      <div class="mainLogo">
+        <img src="assets/logotext.png">
+      </div>
+     
+      <div class="mapLogo">
+        <img src  ="assets/map.png">
+      </div>
+
+
+     </div>
+   
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/mainwelcome']" expand="block" color="primary">සිංහල</ion-button><br>
+        <span class="divider line one-line"></span>
+        <ion-button [routerLink]="['/mainwelcome']" expand="block" color="primary">ENGLISH</ion-button><br>
+        <span class="divider line one-line"></span>
+        <ion-button [routerLink]="['/mainwelcome']" expand="block" color="primary">தமிழ்</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+</div> 
+</ion-content>
